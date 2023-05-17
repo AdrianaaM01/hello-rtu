@@ -7,12 +7,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stages ('Check node version') {
-        stage {
+        stage ('Check node version') {
             steps {
                 bat "node --version"
             }
         }
     }
 }
-}
+
