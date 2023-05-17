@@ -7,10 +7,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stages ('List all files') {
+        stages ('Check node version') {
         stage {
             steps {
-                ls -a
+                bat "node --version"
             }
         }
     }
